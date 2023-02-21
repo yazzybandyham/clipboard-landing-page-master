@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.hero {
+    background-image: url(/images/bg-header-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        background-image: url(/images/bg-header-mobile.png);
+    }
+    .h1-media {
+        font-size: 32px!important;
+    }
+    .p-media {
+        font-size: 16px!important;
+    }
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: hsl(171, 66%, 44%);
+}
+.btn-primary:hover {
+    background-color: hsl(171, 68%, 51%);
+}
+.btn-secondary {
+    background-color: hsl(233, 100%, 69%);
+}
+.btn-secondary:hover {
+    background-color: hsl(233, 96%, 72%);
+}
+.border-success {
+    border-color:hsl(171, 66%, 39%)!important;
+}
+
+.border-success-subtle {
+    border-color:hsl(233, 63%, 58%)!important;
+}
+
+@media screen and (max-width: 768px) {
+    .btn-media {
+        margin-bottom: 1rem;
+        font-size: 18px;
+        padding: 0.5rem 3rem!important;
+    }
+    .btn-primary {
+        margin-top: 2rem;
+    }
+    .btn-secondary {
+        margin-bottom: 3rem;
+    }
+}
+
+/* Content Styles */ 
+
+.content-img {
+    position: relative;
+    top: 0;
+    left: -30%;
+}
+
+@media screen and (max-width: 768px) {
+    .content-img {
+        left: 0;
+    }
+}
+
+.content-container {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .content-container {
+        text-align: center;
+    }
+}
+
+.justify-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .justify-content {
+        margin: 3rem 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logos-container {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .workflow-container {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Footer Styles */ 
+.fab {
+    color: hsl(210, 10%, 33%);
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        margin-top: 5rem;
+    }
+    li {
+        margin-top: 1rem;
+    }
+    a:hover {
+        color: hsl(171, 66%, 44%)!important;
+    }
+    .fab {
+        margin-top: 3rem;
+    }
+    #justify-content-center {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}
